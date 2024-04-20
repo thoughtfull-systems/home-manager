@@ -1476,6 +1476,36 @@ in {
           A new module is available: 'programs.bun'.
         '';
       }
+
+      {
+        time = "2024-04-18T22:30:49+00:00";
+        message = ''
+          A new module is available: 'programs.fd'.
+        '';
+      }
+
+      {
+        time = "2024-04-19T09:23:52+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'programs.tofi'.
+        '';
+      }
+
+      {
+        time = "2024-04-19T10:01:55+00:00";
+        message = ''
+          A new module is available: 'programs.spotify-player'.
+        '';
+      }
+
+      {
+        time = "2024-04-19T14:53:17+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.remmina'.
+        '';
+      }
     ];
   };
 }

@@ -140,6 +140,7 @@ in import nmtSrc {
     ./modules/programs/sftpman
     ./modules/programs/sioyek
     ./modules/programs/sm64ex
+    ./modules/programs/spotify-player
     ./modules/programs/ssh
     ./modules/programs/starship
     ./modules/programs/taskwarrior
@@ -207,6 +208,7 @@ in import nmtSrc {
     ./modules/programs/swayr
     ./modules/programs/terminator
     ./modules/programs/thunderbird
+    ./modules/programs/tofi
     ./modules/programs/waybar
     ./modules/programs/wlogout
     ./modules/programs/wofi
@@ -253,6 +255,7 @@ in import nmtSrc {
     ./modules/services/polybar
     ./modules/services/recoll
     ./modules/services/redshift-gammastep
+    ./modules/services/remmina
     ./modules/services/screen-locker
     ./modules/services/signaturepdf
     ./modules/services/swayidle

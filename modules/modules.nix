@@ -34,6 +34,7 @@ let
     ./misc/numlock.nix
     ./misc/pam.nix
     ./misc/qt.nix
+    ./misc/qt/kconfig.nix
     ./misc/specialisation.nix
     ./misc/submodule-support.nix
     ./misc/tmpfiles.nix
@@ -86,6 +87,7 @@ let
     ./programs/emacs.nix
     ./programs/eww.nix
     ./programs/eza.nix
+    ./programs/fd.nix
     ./programs/feh.nix
     ./programs/firefox.nix
     ./programs/fish.nix
@@ -210,6 +212,7 @@ let
     ./programs/sioyek.nix
     ./programs/skim.nix
     ./programs/sm64ex.nix
+    ./programs/spotify-player.nix
     ./programs/sqls.nix
     ./programs/ssh.nix
     ./programs/starship.nix
@@ -227,6 +230,7 @@ let
     ./programs/tiny.nix
     ./programs/tmate.nix
     ./programs/tmux.nix
+    ./programs/tofi.nix
     ./programs/topgrade.nix
     ./programs/translate-shell.nix
     ./programs/urxvt.nix
@@ -337,6 +341,7 @@ let
     ./services/recoll.nix
     ./services/redshift-gammastep/gammastep.nix
     ./services/redshift-gammastep/redshift.nix
+    ./services/remmina.nix
     ./services/rsibreak.nix
     ./services/safeeyes.nix
     ./services/screen-locker.nix

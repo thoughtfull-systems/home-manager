@@ -71,11 +71,23 @@
     github = "Dines97";
     githubId = 19364873;
   };
+  diniamo = {
+    name = "diniamo";
+    email = "diniamo69@gmail.com";
+    github = "diniamo";
+    githubId = 55629891;
+  };
   dwagenk = {
     email = "dwagenk@mailbox.org";
     github = "dwagenk";
     githubId = 32838899;
     name = "Daniel Wagenknecht";
+  };
+  henrisota = {
+    email = "henrisota@users.noreply.github.com";
+    github = "henrisota";
+    githubId = "56848082";
+    name = "Henri Sota";
   };
   jack5079 = {
     name = "Jack W.";

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports = [ ./sway-stubs.nix ];
@@ -8,18 +8,14 @@
     package = config.lib.test.mkStubPackage { outPath = "@sway@"; };
     checkConfig = false;
     # overriding findutils causes issues
-    config = {
-      menu = "${pkgs.dmenu}/bin/dmenu_run";
+    config.menu = "${pkgs.dmenu}/bin/dmenu_run";
 
-      input = { "*" = { xkb_variant = "dvorak"; }; };
-      output = { "HDMI-A-2" = { bg = "~/path/to/background.png fill"; }; };
-      seat = { "*" = { hide_cursor = "when-typing enable"; }; };
-    };
+    systemd.variables = [ "XCURSOR_THEME" "XCURSOR_SIZE" ];
   };
 
   nmt.script = ''
     assertFileExists home-files/.config/sway/config
     assertFileContent $(normalizeStorePaths home-files/.config/sway/config) \
-      ${./sway-modules.conf}
+      ${./sway-systemd-variables.conf}
   '';
 }
