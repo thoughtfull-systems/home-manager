@@ -92,6 +92,7 @@ let
     ./programs/firefox.nix
     ./programs/fish.nix
     ./programs/foot.nix
+    ./programs/freetube.nix
     ./programs/fuzzel.nix
     ./programs/fzf.nix
     ./programs/gallery-dl.nix
@@ -278,6 +279,7 @@ let
     ./services/clipman.nix
     ./services/clipmenu.nix
     ./services/comodoro.nix
+    ./services/conky.nix
     ./services/copyq.nix
     ./services/darkman.nix
     ./services/devilspie2.nix
