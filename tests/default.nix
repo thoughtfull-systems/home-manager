@@ -71,6 +71,7 @@ in import nmtSrc {
     ./modules/programs/dircolors
     ./modules/programs/direnv
     ./modules/programs/emacs
+    ./modules/programs/fastfetch
     ./modules/programs/feh
     ./modules/programs/fish
     ./modules/programs/gallery-dl
@@ -196,6 +197,7 @@ in import nmtSrc {
     ./modules/programs/gnome-shell
     ./modules/programs/gnome-terminal
     ./modules/programs/hexchat
+    ./modules/programs/hyprlock
     ./modules/programs/i3blocks
     ./modules/programs/i3status-rust
     ./modules/programs/imv
@@ -217,6 +219,7 @@ in import nmtSrc {
     ./modules/programs/wofi
     ./modules/programs/wpaperd
     ./modules/programs/xmobar
+    ./modules/programs/yambar
     ./modules/programs/yt-dlp
     ./modules/services/activitywatch
     ./modules/services/avizo
@@ -241,6 +244,7 @@ in import nmtSrc {
     ./modules/services/gromit-mpx
     ./modules/services/home-manager-auto-upgrade
     ./modules/services/hypridle
+    ./modules/services/hyprpaper
     ./modules/services/imapnotify
     ./modules/services/kanshi
     ./modules/services/lieer

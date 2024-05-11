@@ -1607,6 +1607,55 @@ in {
           between windows, and is also a widget engine.
         '';
       }
+
+      {
+        time = "2024-05-10T10:30:58+00:00";
+        message = ''
+          A new module is available: 'programs.fastfetch'.
+
+          Fastfetch is a Neofetch-like tool for fetching system information and
+          displaying them in a pretty way. See
+          https://github.com/fastfetch-cli/fastfetch for more.
+        '';
+      }
+
+      {
+        time = "2024-05-10T11:48:34+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'programs.hyprlock'.
+
+          Hyprland's simple, yet multi-threaded and GPU-accelerated screen
+          locking utility. See https://github.com/hyprwm/hyprlock for more.
+        '';
+      }
+
+      {
+        time = "2024-05-10T13:35:19+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.hyprpaper'.
+
+          Hyprpaper is a blazing fast wallpaper utility for Hyprland with the
+          ability to dynamically change wallpapers through sockets. It will work
+          on all wlroots-based compositors, though. See
+          https://github.com/hyprwm/hyprpaper for more.
+        '';
+      }
+
+      {
+        time = "2024-05-10T21:28:38+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'programs.yambar'.
+
+          Yambar is a lightweight and configurable status panel for X11 and
+          Wayland, that goes to great lengths to be both CPU and battery
+          efficient - polling is only done when absolutely necessary.
+
+          See https://codeberg.org/dnkl/yambar for more.
+        '';
+      }
     ];
   };
 }

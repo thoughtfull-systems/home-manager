@@ -87,6 +87,7 @@ let
     ./programs/emacs.nix
     ./programs/eww.nix
     ./programs/eza.nix
+    ./programs/fastfetch.nix
     ./programs/fd.nix
     ./programs/feh.nix
     ./programs/firefox.nix
@@ -117,6 +118,7 @@ let
     ./programs/hstr.nix
     ./programs/htop.nix
     ./programs/hyfetch.nix
+    ./programs/hyprlock.nix
     ./programs/i3blocks.nix
     ./programs/i3status-rust.nix
     ./programs/i3status.nix
@@ -252,6 +254,7 @@ let
     ./programs/wpaperd.nix
     ./programs/xmobar.nix
     ./programs/xplr.nix
+    ./programs/yambar.nix
     ./programs/yazi.nix
     ./programs/yt-dlp.nix
     ./programs/z-lua.nix
@@ -304,6 +307,7 @@ let
     ./services/home-manager-auto-upgrade.nix
     ./services/hound.nix
     ./services/hypridle.nix
+    ./services/hyprpaper.nix
     ./services/imapnotify.nix
     ./services/kanshi.nix
     ./services/kbfs.nix
