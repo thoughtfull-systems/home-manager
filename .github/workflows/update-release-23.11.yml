@@ -1,0 +1,36 @@
+name: Update release-23.11
+on:
+  push:
+    branches:
+      - workflows
+  schedule:
+    # every day at midnight
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+concurrency:
+  group: ${{github.workflow}}
+  cancel-in-progress: true
+jobs:
+  update-nixos:
+    name: Update release-23.11
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: thoughtfull-systems/checkout@main
+        with:
+          ref: release-23.11
+          fetch-depth: 0
+          token: ${{ secrets.PAT }}
+      - name: Add upstream remote
+        shell: bash
+        run: git remote add -t release-23.11 --no-tags -f upstream "https://github.com/nix-community/home-manager.git"
+      - name: Merge to upstream/release-23.11
+        shell: bash
+        run: git merge --no-ff upstream/release-23.11
+      - name: Merge branches
+        shell: bash
+        run: |
+          git merge --no-ff origin/workflows
+      - name: Push to origin
+        shell: bash
+        run: git push origin release-23.11
